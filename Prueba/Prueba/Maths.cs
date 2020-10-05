@@ -26,5 +26,16 @@
 
             return x;
         }
+        public static bool IsPrime(int number)
+        {
+            int i = 0;
+            while (i < number)
+            {
+                if ((number % i) == 0)
+                    return false;
+                i++;
+            }
+            return true;
+        }
     }
 }
