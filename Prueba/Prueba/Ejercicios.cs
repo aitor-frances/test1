@@ -35,7 +35,14 @@ namespace Prueba
         //Ejercicio3: Hacer un programa que imprima si un numero es primo o no.
         public static void Ejercicio3(int n)
         {
-            System.Console.WriteLine(Maths.IsPrime(n));
+            if (Maths.IsPrime(n))
+            {
+                System.Console.WriteLine("El número " + n + " SÍ es primo");
+            }
+            else
+            {
+                System.Console.WriteLine("El número " + n + " NO es primo");
+            }
         }
     }
 }
